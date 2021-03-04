@@ -1,5 +1,8 @@
 
 exports.min = function min (array) {
+  if (arguments.length === 0 || array.length === 0) {
+    return 0
+  }
   let min = 5400;
   for (let i = 0; i < array.length; i++) {
     if (array[i] < min) {
@@ -10,6 +13,9 @@ exports.min = function min (array) {
 }
 
 exports.max = function max (array) {
+  if (arguments.length === 0 || array.length === 0) {
+    return 0
+  }
   let max = -5400;
   for (let i = 0; i < array.length; i++) {
     if (array[i] > max) {
@@ -20,6 +26,9 @@ exports.max = function max (array) {
 }
 
 exports.avg = function avg (array) {
+  if (arguments.length === 0 || array.length === 0) {
+    return 0
+  }
   let sum = 0;
   for (let i = 0; i < array.length; i++) {
     sum += array[i];
